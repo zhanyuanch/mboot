@@ -7,12 +7,20 @@
   <version>1.0-SNAPSHOT</version>
   <name>mboot-api</name>
   <url>http://maven.apache.org</url>
+  
+   <parent>
+	<groupId>xyz.resty.mfdp</groupId>
+	<artifactId>mboot-parent</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<relativePath>../mboot-parent/pom.xml</relativePath> <!--  可选的,pom的层次关系只隔一层，则可以省略这个-->
+  </parent>
+	
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+	<dependency>
+	  <groupId>junit</groupId>
+	  <artifactId>junit</artifactId>
+	  <scope>test</scope>
+	</dependency>
   </dependencies>
+  
 </project>
